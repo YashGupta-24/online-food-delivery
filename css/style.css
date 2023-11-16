@@ -1,0 +1,203 @@
+/* CSS setting */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.176);
+    position: sticky;
+    top:0;
+}
+
+/* Navigation bar: Logo */
+#logo img {
+    height: 60px;
+    margin: 5px;
+}
+
+/* Navigation bar: list */
+#navbar ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.4rem;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 19px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Teko', sans-serif;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 4px 1px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+}
+
+#home h1 {
+    margin-top: 72px;
+    color: white;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem;
+    font-family: 'Young Serif', serif;
+}
+
+/* Services section */
+
+#services-container h1 {
+    margin-top: 100px;
+    
+}
+
+#services {
+    margin: 24px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 24px;
+    margin: 3px 35px;
+    border-radius: 23px;
+    background-color: rgb(243, 237, 237);
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+/* Client Section */
+
+#clients {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+#clients img {
+    height: 124px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+    background-color: rgb(243, 237, 237);
+    ;
+}
+
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    margin: 8px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility class */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondry {
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
