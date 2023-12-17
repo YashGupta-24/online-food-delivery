@@ -43,7 +43,7 @@ html{
 #navbar ul li {
     list-style: none;
     font-size: 1.4rem;
-
+    padding-right: 20px;
 }
 
 #navbar ul li a {
@@ -53,12 +53,11 @@ html{
     color: white;
     border-radius: 20px;
     font-family: 'Teko', sans-serif;
+    transition: all 0.4s ease-in-out;
 }
 
 #navbar ul li a:hover {
-    color: black;
-    background-color: white;
-    box-shadow: 1px 1px 4px 1px;
+    transform: scale(1.2);
 }
 
 /* Home Section */
